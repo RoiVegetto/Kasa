@@ -1,0 +1,39 @@
+h1 {
+    position: relative;
+    height: 223px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 48px;
+    border-radius: 25px;
+    margin-top: 68px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  h1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('/public/images/acceuilKasa.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    border-radius: 25px;
+  }
+  
+  h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+    border-radius: 25px;
+  }
+  
