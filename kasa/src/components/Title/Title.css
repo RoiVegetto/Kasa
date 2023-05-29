@@ -1,0 +1,41 @@
+.containerh1 {
+  position: relative;
+  height: 223px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 68px;
+}
+
+.containerh1::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 25px;
+  z-index: 1;
+}
+
+.containerh1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  position: relative; 
+  z-index: 0;
+}
+
+.containerh1 h1 {
+  position: absolute;
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 142.6%;
+  border-radius: 25px;
+  font-family: 'Montserrat', sans-serif;
+  z-index: 2;
+}

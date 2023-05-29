@@ -1,22 +1,19 @@
 import React from 'react';
+import Logo from './components/Header/Logo/Logo';
+import Navigation from './components/Header/Navigation/Navigation';
+import Home from './pages/Home/Home';
 import './App.css';
-import './Header/header.css';
-import Title from './Title/Title';
-import Logo from './Header/Logo/Logo';
-import Navigation from './Header/Navigation/Navigation';
-import SectionCards from './SectionCards/SectionCards';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <div className="header">
-          <Logo />
+          <Logo url="/images/logoKasa.png" />
           <Navigation />
         </div>
       </header>
-      <Title />
-      <SectionCards />
+      <Home />
     </div>
   );
 }
