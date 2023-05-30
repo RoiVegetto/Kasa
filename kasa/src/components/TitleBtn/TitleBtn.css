@@ -1,0 +1,17 @@
+.titleBtn {
+    background-color: #FF6060;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1023px;
+    border-radius: 10px;
+    padding: 0 20px;
+    color: white;
+    height: 52px;
+    font-size: 18px;
+}
+
+.arrow {
+    width: 25px;
+    height: 25px;
+}

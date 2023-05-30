@@ -1,8 +1,13 @@
 import React from 'react';
 import Logo from './components/Header/Logo/Logo';
 import Navigation from './components/Header/Navigation/Navigation';
-import Home from './pages/Home/Home';
+// import Home from './pages/Home/Home';
+import Accomodation from './pages/Accommodation/Accomodation';
+// import Error from './pages/Error/Error';
+//import About from './pages/About/About';
+
 import './App.css';
+import './components/Header/header.css';
 
 function App() {
   return (
@@ -13,7 +18,8 @@ function App() {
           <Navigation />
         </div>
       </header>
-      <Home />
+      <Accomodation />
+
     </div>
   );
 }

@@ -1,9 +1,6 @@
 import React from 'react';
-import '../../App.css';
 import Title from '../../components/Title/Title';
 import SectionCards from '../../components/SectionCards/SectionCards';
-
-import '../../components/Header/header.css'
 
 function Home() {
   return (

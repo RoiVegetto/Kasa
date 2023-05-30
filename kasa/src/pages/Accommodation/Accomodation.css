@@ -1,0 +1,9 @@
+
+.titleBtns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titleBtns .titleBtn {
+    width: 542px;
+}
