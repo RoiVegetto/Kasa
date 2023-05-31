@@ -1,13 +1,19 @@
 .navbar {
     font-size: 24px;
+    display: flex;
 }
 
-.home {
+.nav-link {
     color: #FF6060;
+    text-decoration: none;
     margin: 0 57px 0 0;
+    cursor: pointer;
 }
 
 .about {
-    color: #FF6060;
-    text-decoration: none;
+    margin: 0;
+}
+
+.active-link {
+    text-decoration: underline;
 }
