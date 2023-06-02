@@ -1,0 +1,24 @@
+.card {
+    height: 340px;
+    width: 340px;
+    margin: 50px 0 0 0;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card p {
+    position: absolute;
+    bottom: 0;
+    margin: 0 0 20px 20px;
+    color: white;
+    font-size: 18px;
+    max-width: 100px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 142.6%;
+}

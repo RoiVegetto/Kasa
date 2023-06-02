@@ -3,15 +3,61 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1023px;
+    max-width: 1023px;
     border-radius: 10px;
-    padding: 0 20px;
     color: white;
     height: 52px;
     font-size: 18px;
+    width: 100%;
+    position: relative;
 }
 
 .arrow {
     width: 25px;
     height: 25px;
+    margin: 0 10px 0 0;
 }
+
+.arrow.rotate {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+.content {
+    max-width: 1023px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    height: 249px;
+    background-color: #F6F6F6;
+    border-radius: 0 0 10px 10px;
+    color: #FF6060;
+    padding: 0;
+    margin: 270px 0 0 0px;
+    z-index: -1;
+    align-items: center;
+
+}
+
+.content p {
+    max-width: 550px;
+    line-height: 142.6%;
+    margin: 0 0 0 20px;
+}
+
+.titleCollapse {
+    font-size: 24px;
+    margin: 0 0 0 20px;
+}
+
+.content ul {
+    padding: 0;
+}
+
+.content li {
+    list-style-type: none;
+    max-width: 550px;
+    line-height: 142.6%;
+    margin: 0 0 0 20px;
+}
+

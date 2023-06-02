@@ -1,31 +1,32 @@
 import React from 'react';
 import './Navigation.css';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+
+/**
+ * La navbar est composée de deux mot, Acceuil et A propos
+ * isActive sert a savoir si l'on se trouve sur l'une de ses pages pour souligner le mot en question
+ * @returns 
+ */
 
 function Navigation() {
-  const location = useLocation();
-  const navigate = useNavigate();
-
-  const handleClick = (path) => {
-    navigate(path);
-  };
-
   return (
     <nav className="navbar">
-      <p
-        className={`nav-link ${location.pathname === '/' ? 'active-link' : ''}`}
-        onClick={() => handleClick('/')}
+      <NavLink
+        className={({ isActive }) =>
+          isActive ? 'nav-link active-link' : 'nav-link'
+        }
+        to="/"
       >
         Accueil
-      </p>
-      <p
-        className={`nav-link ${
-          location.pathname === '/about' ? 'active-link' : ''
-        } about`}
-        onClick={() => handleClick('/about')}
+      </NavLink>
+      <NavLink
+        className={({ isActive }) =>
+          isActive ? 'nav-link active-link' : 'nav-link'
+        }
+        to="/about"
       >
         A propos
-      </p>
+      </NavLink>
     </nav>
   );
 }

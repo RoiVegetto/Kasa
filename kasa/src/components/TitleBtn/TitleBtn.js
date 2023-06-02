@@ -1,23 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './TitleBtn.css';
 
-function TitleBtn(props) {
+function TitleBtn({ titleBtn, content }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className="titleBtn">
-      <p>{props.titleBtn}</p>
+    <div className="titleBtn" onClick={handleClick}>
+      <p className='titleCollapse'>{titleBtn}</p>
       <svg
         id="ingredientArrow"
-        className="arrow"
+        className={`arrow ${isOpen ? 'rotate' : ''}`}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         fill="none"
         stroke="#ffffff"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       >
         <path d="M18 15l-6-6-6 6" />
       </svg>
+
+      {isOpen && (
+        <div className="content">
+          {Array.isArray(content) ? (
+            <ul>
+              {content.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{content}</p>
+          )}
+        </div>
+      )}
     </div>
   );
 }

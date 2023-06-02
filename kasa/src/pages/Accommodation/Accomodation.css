@@ -1,9 +1,17 @@
-
 .titleBtns {
     display: flex;
     justify-content: space-between;
+    gap: 76px;
 }
 
-.titleBtns .titleBtn {
-    width: 542px;
+.information {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.second-bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }

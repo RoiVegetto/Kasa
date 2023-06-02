@@ -2,6 +2,12 @@ import React from 'react';
 import './Error.css';
 import { Link } from 'react-router-dom';
 
+/**
+ * Error404 renvoi la page d'erreur 
+ * @param {*} props 
+ * @returns 
+ */
+
 function Error404(props) {
   return (
     <section className="error-section">
