@@ -4,6 +4,14 @@
     gap: 76px;
 }
 
+.titleBtnContainer {
+    min-height: 52px;
+}
+
+.titleBtns .titleBtn {
+    height: 52px;
+}
+
 .information {
     display: flex;
     justify-content: space-between;

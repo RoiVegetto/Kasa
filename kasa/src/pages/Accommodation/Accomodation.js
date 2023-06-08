@@ -1,40 +1,29 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { fetchData } from '../../Hook/fetchData';
 
 import './Accomodation.css';
-import Carrousel from '../../components/Carrousel/Carrousel';
 
+import Carrousel from '../../components/Carrousel/Carrousel';
 import TitleBtn from '../../components/TitleBtn/TitleBtn';
 import Name from '../../components/Name/Name';
 import Destination from '../../components/Destination/Destination';
 import Tag from '../../components/Tag/Tag';
 import Star from '../../components/Star/Star';
 
+
+
 function Accomodation() {
   const { id } = useParams();
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('/kasa.json');
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const jsonData = await response.json();
-        const accommodation = jsonData.find((item) => item.id === id);
-        setData(accommodation);
-      } catch (error) {
-        console.error('Erreur lors de la récupération des données:', error);
-      }
-    };
-
-    fetchData();
+    fetchData(id).then((data) => setData(data));
   }, [id]);
 
   return data && data.host ? (
     <main>
-      <Carrousel ih1={data.cover} />
+      <Carrousel images={data.pictures} />
       <section className="information">
         <div className="first-bloc">
           <div>

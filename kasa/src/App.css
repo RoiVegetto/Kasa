@@ -3,3 +3,10 @@ body {
     margin: auto;
     font-family: 'Montserrat', sans-serif;
 }
+
+@media (max-width: 700px) {
+    body {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
