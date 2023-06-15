@@ -29,3 +29,12 @@
     margin: 0 23px 0 0;
     right: 0;
 }
+
+.carrousel-info {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+}

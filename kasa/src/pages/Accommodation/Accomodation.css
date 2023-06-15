@@ -4,7 +4,7 @@
     gap: 76px;
 }
 
-.titleBtnContainer {
+.titleBtns .titleBtnContainer {
     min-height: 52px;
 }
 
@@ -23,3 +23,13 @@
     flex-direction: column;
     align-items: flex-end;
 }
+
+@media screen and (max-width: 700px) {
+    .titleBtns .titleBtnContainer {
+      min-height: 32px;
+    }
+
+    .titleBtns .titleBtn {
+        height: 32px;
+    }
+  }

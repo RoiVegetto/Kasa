@@ -1,5 +1,11 @@
 import { useState } from 'react';
 
+/**
+ * Ici nous créons deux fonctions pour passer a l'image suivante ou revenir a la précédente
+ * @param {*} items
+ * @returns
+ */
+
 export default function useCarrousel(items) {
   const [index, setIndex] = useState(0);
 

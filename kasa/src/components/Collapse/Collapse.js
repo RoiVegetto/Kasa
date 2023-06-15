@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './TitleBtn.css';
+import './Collapse.css';
 
 function TitleBtn({ titleBtn, content }) {
   const [isOpen, setIsOpen] = useState(false);

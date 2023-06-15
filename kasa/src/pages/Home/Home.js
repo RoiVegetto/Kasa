@@ -4,7 +4,7 @@ import SectionCards from '../../components/SectionCards/SectionCards';
 
 function Home() {
   const [data, setData] = useState([]);
-  const [titleText, setTitleText] = useState('Chez vous, partout et ailleurs');
+  const [titleText] = useState('Chez vous, partout et ailleurs');
 
   useEffect(() => {
     const fetchData = async () => {
@@ -23,27 +23,6 @@ function Home() {
     };
 
     fetchData();
-  }, []);
-
-  useEffect(() => {
-    const handleResize = () => {
-      console.log(window.innerWidth);
-      if (window.innerWidth <= 700) {
-        setTitleText(
-          <>
-            <span>Chez vous,</span>
-            <br />
-            <span>partout et ailleurs</span>
-          </>
-        );
-      } else {
-        setTitleText('Chez vous, partout et ailleurs');
-      }
-    };
-
-    window.addEventListener('resize', handleResize);
-    handleResize();
-    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   return (

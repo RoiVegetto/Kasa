@@ -36,6 +36,23 @@
   font-weight: 500;
   font-size: 48px;
   line-height: 142.6%;
-  border-radius: 25px;
   z-index: 2;
+}
+
+@media screen and (max-width: 745px) {
+  .containerh1 {
+    height: 111px;
+    margin-top: 16px;
+  }
+
+  .containerh1::after, .containerh1 img {
+    border-radius: 10px;
+  }
+
+  .containerh1 h1 {
+    font-size: 24px;
+    width: 215px;
+    line-height: 100%;
+    left: 16px;
+  }
 }

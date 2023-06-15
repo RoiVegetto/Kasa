@@ -5,7 +5,7 @@ import { fetchData } from '../../Hook/fetchData';
 import './Accomodation.css';
 
 import Carrousel from '../../components/Carrousel/Carrousel';
-import TitleBtn from '../../components/TitleBtn/TitleBtn';
+import TitleBtn from '../../components/Collapse/Collapse';
 import Name from '../../components/Name/Name';
 import Destination from '../../components/Destination/Destination';
 import Tag from '../../components/Tag/Tag';
