@@ -38,3 +38,18 @@
     color: white;
     font-size: 18px;
 }
+
+@media screen and (max-width: 700px) {
+.carrousel button {
+    margin: 0;
+}
+
+.carrousel-picture {
+    height: 255px;
+}
+
+    button svg {
+        height: 24px;
+        width: 24px;
+    }
+}

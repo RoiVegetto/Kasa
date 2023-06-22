@@ -65,10 +65,17 @@
 @media screen and (max-width: 700px) {
   .titleBtnContainer {
     max-height: 32px;
+
   }
 
   .titleCollapse {
     margin: 0 0 0 11px;
     font-size: 13px;
   }
+
+  .content p, .content ul {
+    font-size: 12px;
+    margin: 15px 11px
+  }
+
 }

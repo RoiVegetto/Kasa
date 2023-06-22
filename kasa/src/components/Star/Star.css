@@ -5,3 +5,12 @@
 .star {
     height: 25px;
 }
+
+@media screen and (max-width: 700px) {
+    .star {
+        height: 18px;
+    }
+    .stars {
+        margin: 10px 0 0 0;
+    }
+}

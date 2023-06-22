@@ -25,6 +25,10 @@
 }
 
 @media screen and (max-width: 700px) {
+    .titleBtns {
+        flex-direction: column;
+    }
+
     .titleBtns .titleBtnContainer {
       min-height: 32px;
     }
@@ -32,4 +36,17 @@
     .titleBtns .titleBtn {
         height: 32px;
     }
+
+    .information {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .second-bloc {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
   }
+
+
+}

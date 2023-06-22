@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Title from '../../components/Title/Title';
 import SectionCards from '../../components/SectionCards/SectionCards';
+import Footer from '../../components/Footer/Footer';
 
 function Home() {
   const [data, setData] = useState([]);
@@ -26,10 +27,16 @@ function Home() {
   }, []);
 
   return (
-    <main>
-      <Title picture="/images/acceuilKasa.png" titleText={titleText} />
-      <SectionCards data={data} />
-    </main>
+    <>
+      <main>
+        <Title picture="/images/acceuilKasa.png" titleText={titleText} />
+        <SectionCards data={data} />
+      </main>
+      <Footer
+        url="/images/logoKasaFooter.png"
+        p="© 2020 Kasa. All rights reserved"
+      />
+    </>
   );
 }
 

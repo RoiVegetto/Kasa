@@ -12,3 +12,14 @@
     line-height: 26px;
     margin: 0;
 }
+
+@media screen and (max-width: 700px) {
+    .title {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .location {
+        font-size: 14px;
+    }
+
+}

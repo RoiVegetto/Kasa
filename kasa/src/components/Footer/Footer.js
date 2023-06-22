@@ -9,10 +9,10 @@ import './Footer.css';
 
 function Footer(props) {
   return (
-    <div className='footer'>
+    <footer className="footer">
       <img src={props.url} className="logo-footer" alt="Logo footer" />
       <p>{props.p}</p>
-    </div>
+    </footer>
   );
 }
 
