@@ -8,10 +8,6 @@
     min-height: 52px;
 }
 
-.titleBtns .titleBtn {
-    height: 52px;
-}
-
 .information {
     display: flex;
     justify-content: space-between;
@@ -27,14 +23,11 @@
 @media screen and (max-width: 700px) {
     .titleBtns {
         flex-direction: column;
+        gap: 0;
     }
 
     .titleBtns .titleBtnContainer {
       min-height: 32px;
-    }
-
-    .titleBtns .titleBtn {
-        height: 32px;
     }
 
     .information {
@@ -47,6 +40,5 @@
         flex-direction: row-reverse;
         justify-content: space-between;
   }
-
 
 }

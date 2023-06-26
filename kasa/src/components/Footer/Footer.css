@@ -1,7 +1,7 @@
 footer {
     background-color: black;
     height: 209px;
-    width: 100vw;
+    width: 100%;
 }
 
 .footer {
@@ -17,4 +17,10 @@ footer {
 
 .footer img {
     margin: 66px 0 0 0;
+}
+
+@media screen and (max-width: 700px) {
+    .footer p {
+        font-size: 12px;
+    }
 }

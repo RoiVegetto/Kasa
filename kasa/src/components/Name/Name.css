@@ -23,6 +23,7 @@
     .name {
         font-size: 12px;
         line-height: 17px;
+        max-width: 65px;
     }
 
     .picture {
