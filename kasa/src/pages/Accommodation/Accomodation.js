@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { fetchData } from '../../Hook/fetchData';
 
 import './Accomodation.css';
@@ -15,10 +15,22 @@ import Footer from '../../components/Footer/Footer';
 function Accomodation() {
   const { id } = useParams();
   const [data, setData] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    fetchData(id).then((data) => setData(data));
-  }, [id]);
+    fetchData(id)
+      .then((data) => {
+        if (data) {
+          setData(data);
+        } else {
+          navigate('/error', { replace: true });
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+        navigate('/error', { replace: true });
+      });
+  }, [id, navigate]);
 
   return data && data.host ? (
     <>

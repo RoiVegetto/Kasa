@@ -50,9 +50,11 @@ function Carrousel({ images }) {
           </svg>
         </button>
       )}
-      <div className="carrousel-info">
-        {currentImageNumber} / {totalImages}
-      </div>
+      {showNavigation && (
+        <div className="carrousel-info">
+          {currentImageNumber} / {totalImages}
+        </div>
+      )}
     </div>
   );
 }
